@@ -1,7 +1,10 @@
 /* styles go here */
 
 .form-field {
-  display: block;
+  display: inline;
+}
+
+.container {
   margin-bottom: 10px;
 }
 

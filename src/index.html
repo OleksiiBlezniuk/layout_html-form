@@ -20,28 +20,34 @@
     >
       <fieldset class="block">
         <legend>Personal information</legend>
-        <label class="form-field" for="surname">
-          Surname:
+        <div class="container">
+          <label class="form-field" for="surname">
+            Surname:
+          </label>
           <input
             type="text"
             name="surname"
             id="surname"
             required
           >
-        </label>
+        </div>
 
-        <label class="form-field" for="name">
-          Name:
+        <div class="container">
+          <label class="form-field" for="name">
+            Name:
+          </label>
           <input
             type="text"
             name="name"
             id="name"
             required
           >
-        </label>
+        </div>
 
-        <label class="form-field" for="age">
+        <div class="container">
+          <label class="form-field" for="age">
             How old are You?
+          </label>
           <input
             type="number"
             name="age"
@@ -51,34 +57,41 @@
             max="100"
             required
           >
-        </label>
+        </div>
 
-        <label class="form-field" for="date">
-          Full date of birth:
+        <div class="container">
+          <label class="form-field" for="date">
+            Full date of birth:
+          </label>
+
           <input
             type="date"
             name="date"
             id="date"
           >
-        </label>
+        </div>
 
-        <label class="form-field last" for="terms">
-          I accept the term of the agreement
+        <div class="container last">
+          <label class="form-field " for="terms">
+            I accept the term of the agreement
+          </label>
+
           <input
             type="checkbox"
             name="terms"
             id="terms"
             required
           >
-        </label>
-
+        </div>
       </fieldset>
-
       <fieldset class="block">
         <legend>Registration</legend>
 
-        <label class="form-field" for="email">
-          E-mail:
+        <div class="container">
+          <label class="form-field" for="email">
+            E-mail:
+          </label>
+
           <input
             type="email"
             name="email"
@@ -86,10 +99,12 @@
             placeholder="email@example.com"
             required
           >
-        </label>
+        </div>
+        <div class="container last">
+          <label class="form-field" for="pass">
+            Password:
+          </label>
 
-        <label class="form-field last" for="pass">
-          Password:
           <input
             type="password"
             name="pass"
@@ -98,55 +113,61 @@
             minlength="5"
             maxlength="20"
           >
-        </label>
+        </div>
       </fieldset>
 
       <fieldset class="block">
         <legend>An interesting fact about you!</legend>
-        <div class="form-field">
+        <div class="container">
           Do you love cats?
-          <label for="yes">
-            <input
+          <input
               type="radio"
               name="cats"
               id="yes"
               value="yes"
             >
+          <label for="yes">
             Yes
           </label>
 
-          <label for="no">
-            <input
+          <input
               type="radio"
               name="cats"
               id="no"
               value="no"
             >
+          <label for="no">
             No
           </label>
         </div>
 
-        <label class="form-field" for="color">
-          What is your favorite color?
+        <div class="container">
+          <label class="form-field" for="color">
+            What is your favorite color?
+          </label>
           <input
             type="color"
             name="color"
             id="color"
           >
-        </label>
+        </div>
 
-        <label class="form-field" for="time">
-          What time do you go to bed?
+        <div class="container">
+          <label class="form-field" for="time">
+            What time do you go to bed?
+          </label>
           <input
             type="time"
             name="time"
             id="time"
             step="2"
           >
-        </label>
+        </div>
 
-        <label class="form-field" for="cars">
-          What are your favorite brand of cars?
+        <div class="container">
+          <label class="form-field" for="cars">
+            What are your favorite brand of cars?
+          </label>
 
           <select
             name="cars"
@@ -159,22 +180,27 @@
             <option value="" disabled>
             </option>
           </select>
-        </label>
+        </div>
 
-        <label class="form-field last" for="rate">
-          How do you rate our work?
+        <div class="container last">
+          <label class="form-field" for="rate">
+            How do you rate our work?
+          </label>
           <input
             type="range"
             name="rate"
             id="rate"
           >
-        </label>
+        </div>
       </fieldset>
 
       <fieldset class="block">
         <legend>Additional info:</legend>
-        <label class="form-field" for="comment">
-          Comments:
+
+        <div class="container">
+          <label class="form-field" for="comment">
+            Comments:
+          </label>
           <textarea
             name="comment"
             id="comment"
@@ -182,15 +208,17 @@
             rows="2"
           >
           </textarea>
-        </label>
+        </div>
 
-        <label class="form-field last" for="recommend">
-          Would you recommend us?
+        <div class="container last">
+          <label class="form-field" for="recommend">
+            Would you recommend us?
+          </label>
           <select name="recommend" id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
-        </label>
+        </div>
       </fieldset>
 
       <button type="submit">Submit</button>
